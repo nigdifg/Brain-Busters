@@ -33,9 +33,9 @@ function App() {
         
       </Routes>
       </BrowserRouter>
-      <footer>
+      {/* <footer>
         Developed by Anurag
-      </footer>
+      </footer> */}
       </div>
      
     );
