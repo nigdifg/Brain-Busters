@@ -14,7 +14,7 @@ const Signin = () => {
 
   const onLogin = (e) => {
     e.preventDefault();
-    if(email == `${process.env.REACT_APP_ADMIN_EMAIL}` && password==`${process.env.REACT_APP_ADMIN_PASS}`){
+    if(email === `${process.env.REACT_APP_ADMIN_EMAIL}` && password===`${process.env.REACT_APP_ADMIN_PASS}`){
         toast.success('Login Success', {
             position: 'top-right',
             autoClose: 5000,
