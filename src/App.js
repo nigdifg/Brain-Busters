@@ -33,6 +33,9 @@ function App() {
         
       </Routes>
       </BrowserRouter>
+      <footer>
+        Developed by Anurag
+      </footer>
       </div>
      
     );
