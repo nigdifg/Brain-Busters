@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { auth } from '../firebase';
-import { Paper, FormControl, TextField, Button, Typography } from '@mui/material';
+import { Paper, FormControl, TextField, Button, Typography, Hidden } from '@mui/material';
 import { toast,ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import '../assest/Style.css';
 const SignUp = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
@@ -39,9 +39,13 @@ const SignUp = () => {
     <div className='App'>
       <Paper sx={{ padding: 20, 
       margin: 'auto', 
-      maxWidth: 270,
+      marginTop: '40px',
+      marginBottom:'40px',
+      maxWidth: 250,
+      height:'500px',
       width: '300px',
       backgroundColor: '#f2f2f2',
+      overflow:'hidden',
     }}
       >
         <Typography variant='h3' align='center' padding="20px 20px">
@@ -87,7 +91,7 @@ const SignUp = () => {
         <Typography align='center'>
           Already have an account?{' '}
           <hr></hr>
-          LoginIn here{' '}
+          LogIn here{' '}
           <NavLink to='/'>
             Sign In
           </NavLink>

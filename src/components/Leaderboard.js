@@ -8,6 +8,7 @@ import {
   TextField,
   Button,
 } from "@mui/material";
+import '../assest/Style.css';
 import { toast,ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import MenuItem from '@mui/material/MenuItem';
@@ -114,10 +115,10 @@ const Leaderboard = ({ currentUser }) => {
       };
 
   return (
-    <div style={{ backgroundColor: '#e3f8ff' }} >
-<ToastContainer style={{ backgroundColor: '#e3f8ff' }}/>
+    <div >
+<ToastContainer/>
    
-      <div style={{ backgroundColor: '#e3f8ff',minHeight:'100vh' }}  className="leaderboard-container">
+      <div >
         <container >
         <Typography variant="h4" component="h1" spacing={10} align="center" sx={{ marginBottom: "1rem" }}>
           My Dashboard
@@ -156,8 +157,8 @@ const Leaderboard = ({ currentUser }) => {
         </container>
 
         {selectedUser ? (
-          <Grid style={{ backgroundColor: '#e3f8ff' }} container spacing={3} justifyContent="center">
-            <Grid style={{ backgroundColor: '#e3f8ff' }} item xs={12} sm={6} md={4}>
+          <Grid container spacing={3} justifyContent="center">
+            <Grid  item xs={12} sm={6} md={4}>
               <Card className="user-card" style={{ backgroundColor: '#e3f8ff',position:'absolute',top:'50%',left:'50%',transform:'translate(-50%,-50%)'}} sx={{ backgroundColor: "#e3f8ff", boxShadow: "0 0.25rem 0.5rem rgba(0, 0, 0, 0.25)" }}>
                 
                 <CardHeader title={selectedUser.name} className="user-card-header" sx={{ backgroundColor: "#e3f8ff", borderBottom: "1px solid #ddd", padding: "1rem" }}>
@@ -165,7 +166,7 @@ const Leaderboard = ({ currentUser }) => {
                 
                 </CardHeader>   
                           
-                  <CardContent style={{ backgroundColor: '#e3f8ff' }} sx={{ padding: "1rem" }}>
+                  <CardContent  sx={{ padding: "1rem" }}>
                   <Typography variant="body1" className="user-card-text" sx={{ marginBottom: "0.5rem" }}>
                     Status: {selectedUser.Status}
                   </Typography>

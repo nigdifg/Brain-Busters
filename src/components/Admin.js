@@ -10,6 +10,7 @@ import {
 import { db } from "../firebase";
 import { addDoc,orderBy, collection, getDocs, query, where } from "firebase/firestore";
 import SearchAdmin from './SearchAdmin';
+import '../assest/Style2.css';
 const Admin = () => {
   const [users, setUsers] = useState([]);
   const usersCollectionRef = collection(db, "users");
@@ -78,20 +79,20 @@ const Admin = () => {
   }, []);
 
   return (
-    <div style={{ backgroundColor: '#e3f8ff' }}>
+    <div >
     
     <Grid container spacing={2}>
-    <Grid style={{ backgroundColor: '#e3f8ff' }} item sx={4}>
+    <Grid  item sx={4}>
       <SearchAdmin />
       </Grid>
      
-    <Grid style={{ backgroundColor: '#e3f8ff' }} item sm={8}>
-      <div style={{ backgroundColor: '#e3f8ff' }}>
-        <Typography variant="h4" component="h1" align="center">
+    <Grid  item sm={8}>
+      <div >
+        <Typography padding="20px" variant="h4" component="h1" align="center">
          All User Activity Dashboard
         </Typography>
         {usersChunks?.map((usersChunk, index) => (
-          <Grid style={{ backgroundColor: '#e3f8ff' }}  container spacing={3} key={index}>
+          <Grid  container spacing={3} key={index}>
             {usersChunk.map((user) => (
               <Grid padding="40px" item xs={8} sm={12} md={6} key={user.id}>
                 <Card style={{ backgroundColor: '#e3f8ff' }}>

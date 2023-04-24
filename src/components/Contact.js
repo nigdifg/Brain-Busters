@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@mui/styles';
 import {Box, Button,TextField, Grid} from '@mui/material';
 import Social from './Social';
-
+import '../assest/Style.css';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
@@ -51,14 +51,14 @@ const Contact = () => {
   const classes = useStyles();
 
   return (
-   <div style={{ backgroundColor: '#e3f8ff',minHeight:'100vh' }}>
+   <div >
    <Grid container spacing={2}>
      
    <Grid item sx={10} sm={12} md={6}>
 
  
-<div style={{ backgroundColor: '#e3f8ff' }} name='contact' className={classes.root}>
-   <form style={{ backgroundColor: '#e3f8ff' }} method='POST' action='https://getform.io/f/95a757b5-53ec-4c8a-898b-332f059c2b0d' className={classes.form}>
+<div  name='contact' className={classes.root}>
+   <form  method='POST' action='https://getform.io/f/95a757b5-53ec-4c8a-898b-332f059c2b0d' className={classes.form}>
      <h2 className={classes.heading}>Contact Me</h2>
      <p className={classes.subheading}>Submit the form below to email</p>
      <TextField
@@ -98,8 +98,8 @@ const Contact = () => {
 </Grid>
 
 
-<Grid style={{ backgroundColor: '#e3f8ff' }} item sx={6} sm={12} md={4}>
-<Social/>
+<Grid className={classes.root}  item sx={6} sm={12} md={4}>
+<Social className={classes.root} />
 </Grid>
  
 

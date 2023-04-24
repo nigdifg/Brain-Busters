@@ -21,7 +21,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import IconButton from '@mui/material/IconButton';
 import AccountCircle from '@mui/icons-material/AccountCircle';
-
+import '../assest/Style.css';
 
 
 const steps = [
@@ -111,6 +111,7 @@ const Home = () => {
         signOut(auth).then(() => {
         // Sign-out successful.
         if(signOut){
+          localStorage.removeItem('selectedUserData');
           sessionStorage.removeItem('timeRemaining');
           localStorage.removeItem('clue1');
           localStorage.removeItem('clue2');
@@ -276,7 +277,7 @@ Your goal is to solve the puzzle by finding and connecting all the pieces togeth
      
 </Typography>
 
-<Typography align='center'> How to play ?</Typography>
+<Typography padding="10px" marginLeft="27rem"> How to play ?</Typography>
 
 <Box 
 padding= "30px 40px" 

@@ -11,11 +11,18 @@ import {
   Link,
 } from "@mui/material";
 import { GitHub, LinkedIn, Twitter } from "@mui/icons-material";
-
+import '../assest/Style.css';
 const Social = () => {
   return (
-    <div style={{ backgroundColor: '#e3f8ff' }}>
-    <Card style={{ backgroundColor: '#e3f8ff' }} sx={{ maxWidth: 800,padding:'60px' }}>
+    <div>
+    <Card 
+     width= '100%'
+     height= '100%'
+     display= 'flex'
+     justifyContent= 'center'
+     alignItems= 'center'
+     padding= '3rem'
+    sx={{marginTop:13, maxWidth: 600,padding:'40px' }}>
       <CardHeader title="About Me" />
       <CardContent>
         <Typography variant="body1" gutterBottom>
