@@ -226,7 +226,7 @@ Yet you see me, and cannot help but stare. What am I?
         <Modal open={open6} onClose={handlecloseDeadend1} aria-labelledby="title" aria-describedby="desc">
           <Box sx={style}>
             <Typography id="title" variant="h6" component="h2">Dead-end- 1</Typography>
-            <Typography id="desc" sx={{ mt: 2 }}> becharaa</Typography>
+            <Typography id="desc" sx={{ mt: 2 }}> Don't waste your time! It was just a dead-end</Typography>
           </Box>
         </Modal>
        

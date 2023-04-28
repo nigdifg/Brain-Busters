@@ -181,7 +181,7 @@ const Home = () => {
           )}
         </Box>
 
-        <Link to="/Puzzle"  sx={{   
+        <Link to="/YtVideo" sx={{   
     flexGrow: 2,
     color: '#fff',
     fontSize: '2.5rem',
@@ -279,17 +279,17 @@ Your goal is to solve the puzzle by finding and connecting all the pieces togeth
 
 <Typography padding="10px" marginLeft="27rem"> How to play ?</Typography>
 
-<Box 
-padding= "30px 40px" 
-margin="auto"
+      <Box 
+      padding= "30px 40px" 
+      margin="auto"
 
-sx={{ maxWidth: 800 ,
+      sx={{ maxWidth: 800 ,
 
-    fontSize:"24px",
-    fontWeight:"bold",
-    bgcolor:"#e3f8ff",
-}}
->
+          fontSize:"24px",
+          fontWeight:"bold",
+          bgcolor:"#e3f8ff",
+      }}
+      >
 
       <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((step, index) => (
@@ -323,7 +323,18 @@ sx={{ maxWidth: 800 ,
       </Stepper>
       {activeStep === steps.length && (
         <Paper bgcolor="#e3f8ff" square elevation={0} sx={{ p: 3,bgcolor:"#e3f8ff" }}>
-          <Typography  >Good luck, and have fun!</Typography>
+          <Typography  >Good luck, and have fun!
+
+          <Link to="/YtVideo"  sx={{   
+            flexGrow: 2,
+            color: '#fff',
+            fontSize: '2.5rem',
+            fontWeight: 'bold', 
+          }}>
+          <b> Play Puzzle</b>
+         
+          </Link>
+          </Typography>
           {/* <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
             Reset
           </Button> */}
@@ -332,8 +343,9 @@ sx={{ maxWidth: 800 ,
     </Box>
 
       
+  </Box>
     </Box>
-    </Box>
+
 </div>
   )
 }

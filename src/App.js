@@ -11,6 +11,7 @@ import Admin from './components/Admin';
 import Contact from "./components/Contact";
 import SignInasAdmin from "./components/SignInasAdmin";
 import Social from "./components/Social";
+import YtVideo from "./components/YtVideo"
 import './App.css'
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route exact path="/contact" element={<Contact />}/>
         <Route exact path="/SignInasAdmin" element={<SignInasAdmin/>}/>
         <Route exact path="/Social" element={< Social />}/>
+        <Route exact path="/YtVideo" element={< YtVideo />}/>
         
       </Routes>
       </BrowserRouter>

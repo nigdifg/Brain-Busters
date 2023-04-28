@@ -128,7 +128,7 @@ if (user && (user.displayName || user.email)) {
       checkUserExists();  
     }
     else{
-      alert("oops... you losses!");
+      alert("oops... you lose!");
       clues = correct_ques;
       accuracy = ((clues/5)*100);
       status="Losse";
